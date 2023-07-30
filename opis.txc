@@ -1,0 +1,129 @@
+Assumptions of the project
+
+The premise of the project is to generate a music list of randomly selected songs from the Spotify portal based on the music list of a user's favorite songs. 
+The project is based on data obtained through the Spotify portal and the Spotipy library written in Python and the data visualization part in R language.
+
+The project is divided into four parts:
+Acquisition of data - spotify_list.ipynb file (necessary to install spotipy library and panda)
+Creation of random song lists on Spotify generating more than 3000 random songs
+Creation of a list of favorite songs serving as an algorithm for learning music preferences 
+Data processing - spotify_list.ipynb file
+Combining random lists into a single list 
+Removal of unnecessary information
+Data verification
+Machine learning - music_learing.ipynb file
+Data review
+Selection of the learning algorithm - Random Forest
+Data visualization in R Studio - file R_Vizualiztion.R
+Preparation of data visualization
+
+User manual
+
+In order to correctly obtain the expected results of the code, you need to:
+
+Install the following libraries in Python:
+pip install Spotify
+pip install pandas
+pip install matplotlib
+pip install seaboard
+pip install sklearn
+
+Install R Studio packages:
+install.packages("tidyverse")
+install.packages("ggplot")
+install.packages("skimr")
+Place all files in one local folder
+Set this folder in R Studio as a "Set As Working Directory" folder
+
+Order in which to run the files:
+Run Jupiter Notebook first.
+Step one
+Run the Spotify_list.ipynb file
+The end result of running this file should be three files saved in the folder:
+AllSpotifySongs.csv - a random list of songs of more than 3,000 songs
+RandomSpotifyList_Liked.csv - a list of favorite songs 
+RandomSpotifyList_Unliked.csv - a list of unliked songs
+
+Step two
+Run the music_learing.ipynb file
+The end result of running this file should be files saved in the folder:
+NewList.csv - music list of suggested songs based on prediction using Random Forest algorithm
+
+Step three
+Start R Studio
+Set the folder where the files are as a working folder
+Open the project_visualization.R file
+Run the code
+
+
+Algorithm selection
+
+Random forest - Wikipedia
+Random forest or random decision forest is an ensemble method of machine learning for classification, regression and other tasks that involves constructing multiple decision trees at learning time and generating a class that is the dominant of the classes (classification) or the predicted average (regression) of the individual trees[1][2]. Random decision forests improve the tendency of decision trees to over-fit the training set[3] p.587-588. The first random decision forest algorithm was developed by Tina Kam Ho[1] using the random subspace method[2], which in Ho's formulation is a way to implement the "stochastic discrimination" approach to classification proposed by Eugene Kleinberg[4][5][6].
+random decision forest - an ensemble method of machine learning for classification, regression and other tasks, which involves constructing multiple decision trees during learning and generating a class that is the dominant of the classes (classification) or the predicted average (regression) of the individual trees.
+
+
+---------------------------------------------
+Założenia projektu
+
+Założeniem projektu jest generowanie listy muzycznej w losowo wybranych utworów z portalu Spotify na podstawie listy muzycznej ulubionych utworów danego użytkownika. 
+Projekt oparty jest na danych uzyskanych dzięki portalowi Spotify oraz bibliotece Spotipy napisanej w języku Python oraz części wizualizacji danych w języku R.
+
+Projekt został podzielony na cztery części:
+Pozyskanie danych - plik spotify_list.ipynb (niezbędne zainstalowanie biblioteki spotipy oraz panda)
+Utworzenie losowych list utworów w portalu Spotify generujących ponad 3000 utworów losowych
+Utworzenie listy ulubionych utworów służącej algorytmowi na nauki preferencji muzycznych 
+Obróbka danych - plik spotify_list.ipynb
+Połączenie losowych list w jedną listę 
+Usunięcie zbędnych informacji
+Weryfikacja danych
+Uczenie maszynowe - plik music_learing.ipynb
+Przegląd danych
+Dobranie algorytmu uczącego - Random Forest
+Wizualizacja danych w R Studio - plik R_Vizualiztion.R
+Przygotowanie wizualizacji danych
+
+Instrukcja obsługi
+
+Aby poprawnie uzyskać oczekiwane rezultaty działania kodu należy:
+
+Zainstalować w języku Python następujące biblioteki:
+pip install Spotify
+pip install pandas
+pip install matplotlib
+pip install seaboard
+pip install sklearn
+
+Zainstalować R Studio pakiety:
+install.packages("tidyverse")
+install.packages("ggplot")
+install.packages("skimr")
+Umieścić wszystkie pliki w jednym folderze lokalnym
+Ustawić ten folder w R Studio jako folder „Set As Working Directory”
+
+Kolejność uruchamiania plików:
+Uruchom najpierw Jupiter Notebook.
+Krok pierwszy
+Uruchom plik Spotify_list.ipynb
+Efektem końcowym uruchomienia tego pliku powinny być zapisane w folderze trzy pliki:
+AllSpotifySongs.csv - losowa lista utworów ponad 3 tyś utworów
+RandomSpotifyList_Liked.csv - lista ulubionych utworów 
+RandomSpotifyList_Unliked.csv - lista nie lubianych utworów
+
+Krok drugi
+Uruchom plik music_learing.ipynb
+Efektem końcowym uruchomienia tego pliku powinny być zapisany w folderze pliki:
+NewList.csv - lista muzyczna sugerowanych utworów na podstawie predykcji za pomocą algorytmu Random Forest
+
+Krok trzeci
+Uruchom R Studio
+Ustaw folder w którym są pliki jako folder roboczy
+Otwórz plik projekt_wizualizacja.R
+Uruchom kod
+
+
+Wybór algorytmu
+
+Random Forest - Wikipedia
+Las losowy (ang.random forest) lub losowy las decyzyjny (ang.random decision forest) – metoda zespołowa uczenia maszynowego dla klasyfikacji, regresji i innych zadań, która polega na konstruowaniu wielu drzew decyzyjnych w czasie uczenia i generowaniu klasy, która jest dominantą klas (klasyfikacja) lub przewidywaną średnią (regresja) poszczególnych drzew[1][2]. Losowe lasy decyzyjne poprawiają tendencję drzew decyzyjnych do nadmiernego dopasowywania się do zestawu treningowego[3] s.587–588. Pierwszy algorytm losowych lasów decyzyjnych został stworzony przez Tina Kam Ho[1] przy użyciu metody losowej podprzestrzeni[2], która w formule Ho jest sposobem na implementację podejścia „dyskryminacji stochastycznej” do klasyfikacji zaproponowanej przez Eugene'a Kleinberga[4][5][6].
+random decision forest – metoda zespołowa uczenia maszynowego dla klasyfikacji, regresji i innych zadań, która polega na konstruowaniu wielu drzew decyzyjnych w czasie uczenia i generowaniu klasy, która jest dominantą klas (klasyfikacja) lub przewidywaną średnią (regresja) poszczególnych drzew.
